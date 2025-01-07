@@ -31,6 +31,8 @@ h1 .text-logo{
     font-size: 10px;
 }
 
+
+
 .background-verde{
     background-color: var(--azul-aqua);
 }
@@ -235,6 +237,9 @@ main .container{
 .img-objetivos img, .image-objetivos img{
     width: 100%;
     border-radius: 10px;
+}
+.importancia-objetivos  .container .text-objetivos h2{
+    font-size: 2rem;
 }
 .text-objetivos{
     width:50%;
