@@ -229,10 +229,10 @@ main .container{
     display: flex;
     align-items: center;
 }
-.img-objetivos{
+.img-objetivos, .image-objetivos{
     width:50%;
 }
-.img-objetivos img{
+.img-objetivos img, .image-objetivos img{
     width: 100%;
     border-radius: 10px;
 }
@@ -249,7 +249,7 @@ main .container{
     color: var(--color-p);
 }
 /*Section newsletter*/
-.newsletter{
+.newsletter, .newsletter-sobre{
     background-color: var(--azul-aqua);
     margin-top: 50px;
 }
@@ -263,19 +263,26 @@ main .container{
 }
 .newsletter .container .box-newsletter h2,
 .newsletter .container .box-newsletter p,
-.newsletter .container .box-newsletter button{
+.newsletter .container .box-newsletter button,
+.newsletter-sobre .container .box-newsletter h2,
+.newsletter-sobre .container .box-newsletter p,
+.newsletter-sobre .container .box-newsletter button{
     color: black;
     text-align: center;
 }
-.newsletter .container .box-newsletter h2{
+.newsletter .container .box-newsletter h2,
+.newsletter-sobre .container .box-newsletter h2{
     font-size: 2.5rem;
 }
+.newsletter .box-newsletter p,
 .newsletter .box-newsletter p{
     margin: 13px 0;
 }
-.newsletter .box-newsletter input{
+.newsletter .box-newsletter input,
+.newsletter-sobre .box-newsletter input{
     width: 35%;
     padding: 15px;
+    margin-top: 30px;
     border-radius: 15px;
     border: none;
     outline: none;
@@ -283,7 +290,8 @@ main .container{
     background-color: #f2f7a9;
 
 }
-.newsletter .box-newsletter button{
+.newsletter .box-newsletter button,
+.newsletter-sobre .box-newsletter button{
     font-size: 15px;
     border: none;
     outline: none;
@@ -301,13 +309,14 @@ main .container{
     color:black;
     text-align: center;
     font-size: 2rem;
+    margin: 20px 0;
 }
 /*Início de Receitas Nutritivas*/
 .importancia-objetivos h2{
     color: black;
     font-size: 2rem;
     text-align:center;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 .titulo-receita{
     color:black;
@@ -504,6 +513,18 @@ footer .container h3{
 }
 /*responsividade*/
 @media (max-width: 960px){
+    h2{
+        font-size: 1.5rem;
+    }
+    .duvidas{
+        margin-top: 0px;
+    }
+    .duvidas .card{
+        padding: 10px;
+    }
+    .importancia-objetivos h2{
+        margin-bottom: 0;
+    }
     .icone-menu{
         display: block;
     }
@@ -568,7 +589,9 @@ footer .container h3{
     }
     .importancia-objetivos .container .img-objetivos{
         width:100%;
+       
     }
+    
     .importancia-objetivos .container .text-objetivos{
         width:100%;
     }
@@ -577,12 +600,46 @@ footer .container h3{
         width:100%;
     }
 
-    .img-objetivos img{
-        width: 100%;
+    .image-objetivos{
+        display: none;
     }
     .newsletter{
-    
-        display: none;
+        margin-top: 50%;
+        width: 100%;
+        text-align: center;
+    }
+    .newsletter-sobre{
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .newsletter .container .box-newsletter,
+    .newsletter-sobre .container .box-newsletter{
+        width: 100%;
+    }
+    .newsletter .container .box-newsletter h2,
+    .newsletter-sobre .container .box-newsletter h2{
+        font-size: 1rem;
+        text-align: justify;
+        margin-top: 14%;
+    }
+    .newsletter .container .box-newsletter p,
+    .newsletter-sobre .container .box-newsletter p{
+        font-size: 11px;
+        text-align: justify;
+    }
+    .newsletter .box-newsletter input,
+    .newsletter-sobre .box-newsletter input{
+        width: 90%;
+        margin: 10%;
+    }
+    .newsletter .box-newsletter button,
+    .newsletter-sobre .box-newsletter button{
+        margin-top: 10px;
+    }
+    .newsletter .box-newsletter,
+    .newsletter .box-newsletter{
+        padding: 40px;
     }
     .calculadora {
         margin: 10% 0;
