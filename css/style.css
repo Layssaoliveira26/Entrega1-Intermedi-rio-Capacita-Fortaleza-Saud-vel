@@ -268,7 +268,7 @@ main .container{
 .newsletter-sobre .container .box-newsletter p,
 .newsletter-sobre .container .box-newsletter button{
     color: black;
-    text-align: center;
+    text-align:center;
 }
 .newsletter .container .box-newsletter h2,
 .newsletter-sobre .container .box-newsletter h2{
@@ -314,9 +314,9 @@ main .container{
 /*Início de Receitas Nutritivas*/
 .importancia-objetivos h2{
     color: black;
-    font-size: 2rem;
-    text-align:center;
     margin: 20px 0;
+    text-align: center;
+    font-size: 2rem;
 }
 .titulo-receita{
     color:black;
@@ -522,6 +522,12 @@ footer .container h3{
     .duvidas .card{
         padding: 10px;
     }
+    .image-objetivos img{
+        width: 100%;
+        align-items: center;
+        height: auto;
+        justify-content: center;
+    }
     .importancia-objetivos h2{
         margin-bottom: 0;
     }
@@ -595,18 +601,15 @@ footer .container h3{
     .importancia-objetivos .container .text-objetivos{
         width:100%;
     }
-    
     .dicas .card{
         width:100%;
     }
 
-    .image-objetivos{
-        display: none;
-    }
     .newsletter{
-        margin-top: 50%;
+        margin-top: 10%;
         width: 100%;
         text-align: center;
+        justify-content: center;
     }
     .newsletter-sobre{
         margin-top: 0;
@@ -649,7 +652,7 @@ footer .container h3{
         display: flex;
         align-items: center; 
     }
-
+}
 @media(max-width: 700px){
     .beneficios-resumidos{
         flex-direction: column;
@@ -659,4 +662,9 @@ footer .container h3{
         padding-bottom: 15px;
     }
 }
+@media(max-width: 600px){
+    .image-objetivos img{
+        display: none;
+    }
 }
+
