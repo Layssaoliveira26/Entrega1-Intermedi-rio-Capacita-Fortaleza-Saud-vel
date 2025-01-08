@@ -415,7 +415,6 @@ main .container{
     align-items: center;
     align-content: center;
     justify-content: center;
-    width: 100%;
     height: 100vh;
     background-color: var(--azul-aqua);
 }
@@ -430,6 +429,7 @@ main .container{
     border-radius: 7px;
     padding: 20px;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    width: 32%;
 }
 
 .areaLogin img {
@@ -493,12 +493,12 @@ main .container{
     margin: 0 !important;
 
 }
-
 .btn:hover {
     transform: scale(1.05);
     background-color: #e6e6fa85;
 
 }
+
 /*Inicio do footer*/
 footer{
     background-color:#09393a
@@ -611,7 +611,8 @@ footer .container h3{
     }
 
     .newsletter{
-        margin-top: 10%;
+        padding-top: 30px;
+        margin-top: 30%;
         width: 100%;
         text-align: center;
         justify-content: center;
@@ -621,6 +622,7 @@ footer .container h3{
         width: 100%;
         text-align: center;
     }
+    
     .newsletter .container .box-newsletter,
     .newsletter-sobre .container .box-newsletter{
         width: 100%;
@@ -665,6 +667,10 @@ footer .container h3{
     }
     .beneficios-resumidos p{
         padding-bottom: 15px;
+    }
+    .formLogin{
+        width: 90%;
+        height:auto;
     }
 }
 @media(max-width: 600px){
